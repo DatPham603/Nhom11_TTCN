@@ -57,6 +57,11 @@ public class AddCustomerFrame extends javax.swing.JFrame {
         jLabel5.setText("Vai trò:");
 
         cbRole.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ADMIN", "MEMBER" }));
+        cbRole.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbRoleActionPerformed(evt);
+            }
+        });
 
         btnAdd.setText("Thêm");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -201,6 +206,10 @@ public class AddCustomerFrame extends javax.swing.JFrame {
             usersManagement.setVisible(true);
         }
     }//GEN-LAST:event_btnAddActionPerformed
+
+    private void cbRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbRoleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbRoleActionPerformed
 
     /**
      * @param args the command line arguments

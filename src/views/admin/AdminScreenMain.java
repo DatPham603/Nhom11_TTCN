@@ -176,12 +176,22 @@ public class AdminScreenMain extends javax.swing.JFrame {
         toolBtnNew.setFocusable(false);
         toolBtnNew.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         toolBtnNew.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        toolBtnNew.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                toolBtnNewActionPerformed(evt);
+            }
+        });
         jToolBar1.add(toolBtnNew);
 
         toolBtnOpen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/open.png"))); // NOI18N
         toolBtnOpen.setFocusable(false);
         toolBtnOpen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         toolBtnOpen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        toolBtnOpen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                toolBtnOpenActionPerformed(evt);
+            }
+        });
         jToolBar1.add(toolBtnOpen);
 
         toolBtnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save.png"))); // NOI18N
@@ -234,18 +244,33 @@ public class AdminScreenMain extends javax.swing.JFrame {
         miNew.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/new.png"))); // NOI18N
         miNew.setMnemonic('N');
         miNew.setText("New");
+        miNew.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miNewActionPerformed(evt);
+            }
+        });
         jMenu1.add(miNew);
 
         miOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         miOpen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/open.png"))); // NOI18N
         miOpen.setMnemonic('O');
         miOpen.setText("Open");
+        miOpen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miOpenActionPerformed(evt);
+            }
+        });
         jMenu1.add(miOpen);
 
         miSave.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         miSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save.png"))); // NOI18N
         miSave.setMnemonic('S');
         miSave.setText("Save");
+        miSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miSaveActionPerformed(evt);
+            }
+        });
         jMenu1.add(miSave);
         jMenu1.add(jSeparator1);
 
@@ -484,6 +509,26 @@ public class AdminScreenMain extends javax.swing.JFrame {
         // TODO add your handling code here:
         jMenuItem6ActionPerformed(null);
     }//GEN-LAST:event_jMenuItem15ActionPerformed
+
+    private void toolBtnNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toolBtnNewActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_toolBtnNewActionPerformed
+
+    private void toolBtnOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toolBtnOpenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_toolBtnOpenActionPerformed
+
+    private void miNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miNewActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_miNewActionPerformed
+
+    private void miOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miOpenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_miOpenActionPerformed
+
+    private void miSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miSaveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_miSaveActionPerformed
 
     /**
      * @param args the command line arguments

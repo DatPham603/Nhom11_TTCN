@@ -118,6 +118,11 @@ public class CustomersManagement extends javax.swing.JFrame {
         jLabel5.setText("Vai trò:");
 
         cbRole.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ADMIN", "MEMBER" }));
+        cbRole.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbRoleActionPerformed(evt);
+            }
+        });
 
         btnAdd.setText("Thêm mới");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -391,6 +396,10 @@ public class CustomersManagement extends javax.swing.JFrame {
     private void tbUserCaretPositionChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_tbUserCaretPositionChanged
         // TODO add your handling code here:
     }//GEN-LAST:event_tbUserCaretPositionChanged
+
+    private void cbRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbRoleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbRoleActionPerformed
 
     /**
      * @param args the command line arguments
